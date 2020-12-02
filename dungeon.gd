@@ -17,13 +17,13 @@ var width : int
 var height : int
 
 
-func _init(root, x, y, width, height):
+func _init(_root, _x, _y, _width, _height):
 	randomize()
-	self.root = root
-	self.x = x
-	self.y = y
-	self.width = width
-	self.height = height
+	self.root = _root
+	self.x = _x
+	self.y = _y
+	self.width = _width
+	self.height = _height
 	
 	split_subdungeon()
 	if is_leaf:
@@ -104,7 +104,7 @@ func get_size() -> Vector2:
 
 
 func get_center_position() -> Vector2:
-	return Vector2(x + width/2, y + height/2)
+	return Vector2(x + float(width)/2, y + float(height)/2)
 
 
 func print_properties() -> void:

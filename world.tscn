@@ -26,10 +26,6 @@ margin_bottom = 640.0
 rect_min_size = Vector2( 800, 640 )
 color = Color( 0.501961, 0.470588, 0.470588, 1 )
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
-
-[node name="Line2D" type="Line2D" parent="."]
-points = PoolVector2Array( 298, 234.398, 224, 422.398, 594, 344.398 )
-width = 1.0
-default_color = Color( 0.4, 0.501961, 1, 1 )
